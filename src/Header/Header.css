@@ -103,13 +103,26 @@ a{
         display: block;
         height: 5%;
         width: 5%;
-        margin-left: 3%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .menu1{
+        display:none;
+    }
+    .close{
+        display:none;
+    }
+    .close1{
+        display: block;
+        height: 5%;
+        width: 5%;
+        margin-left: 5%;
         margin-top: 3%;
     }
     .dropdown{
         display: none;
     }
-    .shown{
+    .dropdown1{
         display: block;
     }
     
@@ -120,7 +133,7 @@ a{
         margin-bottom: 45%;
     }
     .learn{
-        margin-left: 30%;
+        margin-left: 35%;
         margin-top: 2%;
         padding: 1%;
         padding-right: 3%;
