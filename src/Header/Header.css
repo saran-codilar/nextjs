@@ -1,0 +1,151 @@
+.header{
+    background-color: black;
+    width: 100%;
+}
+.vercel{
+    height: 9%;
+    width: 9%;
+    margin-left: 10%;
+}
+.heading{
+    float: right;
+    margin-top: 1%;
+    margin-right: 12%;
+    color: white;
+    background-color: black;
+}
+.body1{
+    margin-left: 4%;
+    display: flex;
+    background-color: white;
+    /* width: 100%; */
+}
+a{
+    text-decoration: none;
+    color: #696969;
+    padding-left: 3%;
+}
+.menu{
+    display:none;
+}
+.dropdown{
+    display: none;
+}
+.title{
+    margin-top: 1.5%;
+}
+.learn{
+    margin-left: 7.5%;
+    margin-top: 1%;
+    padding: 0.5%;
+    border: 1px solid #696969;
+    height: 2%;
+    background-color: #0076FFE6;
+    color: white;
+    border-radius: 5px;
+}
+.nextjs{
+    height: 4rem;
+    weight: 4rem;
+}
+.github{
+    margin-top: 1%;
+    margin-left: 8%;
+    height: 2rem;
+    width: 2rem;
+}
+.body2{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 0.750rem;
+    border: 2px solid #cec8c860;
+    padding-bottom: 0%;
+    border-radius: 10px;
+    margin-bottom: 9%;
+}
+.bold{
+    color: black;
+}
+.new{
+    background: linear-gradient(90deg, #ed6292 25%, #ed5760 87.5%);
+    padding:0.2%;
+    border-radius: 5px;
+    color: white;
+}
+@media screen and (max-width: 1024px){
+    .title{
+        display: none;
+    }
+    .github{
+        display: none;
+    }
+    .vercel{
+        height: 25%;
+        width: 25%;
+        margin-left: 2%;
+    }
+    .heading{
+        
+        margin-top: 3%;
+        margin-right: 2%;
+        font-size: 90%;
+        color: white;
+        background-color: black;
+    }
+    .body1{
+        margin-left: -8%;
+        display: flex;
+        background-color: white;
+    }
+    .menu{
+        display: block;
+        height: 5%;
+        width: 5%;
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+    .dropdown{
+        display: none;
+    }
+    .shown{
+        display: block;
+    }
+    
+    .droplist{
+        margin-bottom: 5%;
+    }
+    .droplist1{
+        margin-bottom: 45%;
+    }
+    .learn{
+        margin-left: 30%;
+        margin-top: 2%;
+        padding: 1%;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+    .box{
+        text-align: left;
+    }
+    .body2{
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: left;
+        margin-top: 2%;
+        line-height: 200%;
+        font-size: 80%;
+    }
+    .bold{
+        color: black;
+    }
+    .new{
+        background: linear-gradient(90deg, #ed6292 25%, #ed5760 87.5%);
+        margin-right: 90%;
+        margin-left: 2%;
+        padding:0.5%;
+        border-radius: 5px;
+        color: white;
+    }
+}
