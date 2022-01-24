@@ -4,7 +4,7 @@ import Vercel from './vercel.png';
 import Nextjs from './nextjs.png';
 import Github from './github.png';
 import Menu from './menu.png';
-const type = ['block','none'];
+import Close from './close.png';
 
 export default class Header extends Component {
 
@@ -12,12 +12,14 @@ export default class Header extends Component {
         super(props);
         this.state=
         {
-            isMenu: true
+            isMenu: true,
+            isMenubar: true
         };
         this.handleClick=this.handleClick.bind(this);
     }
     handleClick() {
         this.setState({isMenu:!this.state.isMenu})
+        this.setState({isMenubar:!this.state.isMenubar})
       }
 
     render() {
@@ -37,9 +39,11 @@ export default class Header extends Component {
                     <a href="#" className="title">Enterprise</a>
                     <a href="#" className="learn">Learn</a>
                     <img src={Github} alt="image" className="github" />
-                    <img src={Menu} alt="image" className="menu menu1" onClick={this.handleClick} />
+                    <img src={Menu} alt="image" className={this.state.isMenubar? ('menu'):('menu menu1')} onClick={this.handleClick} />
+                    <img src={Close} alt="image" className={this.state.isMenubar? ('close'):('close close1')} onClick={this.handleClick} />
+
                 </div>
-                <div className={this.state.isMenu? ('dropdown'):('dropdown shown menu1')}>
+                <div className={this.state.isMenu? ('dropdown'):('dropdown dropdown1')}>
                     <ol className="droplist"><a href="#">Learn</a></ol>
                     <ol className="droplist"><a href="#">Showcase</a></ol>
                     <ol className="droplist"><a href="#">Docs</a></ol>
